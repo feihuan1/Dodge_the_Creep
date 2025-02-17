@@ -27,8 +27,6 @@ func get_input():
 		velocity.y -= 1
 	if Input.is_action_pressed("down"):
 		velocity.y += 1
-	if(Input.is_action_pressed("ui_accept")):
-		start(Vector2.ZERO)
 
 func player_movement(delta):
 	if(velocity.length() > 0):
